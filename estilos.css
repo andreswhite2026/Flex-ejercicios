@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.panel {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4d4d;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid white;
+
+    transition: all 0.3s ease;
+}
+
+.caja {
+    background: red;
+    padding: 20px;
+    margin: 5px;
+    min-width: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caja:hover {
+    background: orange;
+}

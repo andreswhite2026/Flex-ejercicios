@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox interactivo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Flexbox Interactivo</h1>
+
+<div class="panel">
+
+    <h3>flex-direction</h3>
+    <button onclick="setDirection('row')">row</button>
+    <button onclick="setDirection('row-reverse')">row-reverse</button>
+    <button onclick="setDirection('column')">column</button>
+    <button onclick="setDirection('column-reverse')">column-reverse</button>
+
+    <h3>justify-content</h3>
+    <button onclick="setJustify('flex-start')">start</button>
+    <button onclick="setJustify('center')">center</button>
+    <button onclick="setJustify('flex-end')">end</button>
+    <button onclick="setJustify('space-between')">between</button>
+    <button onclick="setJustify('space-around')">around</button>
+    <button onclick="setJustify('space-evenly')">evenly</button>
+
+    <h3>align-items</h3>
+    <button onclick="setAlign('flex-start')">start</button>
+    <button onclick="setAlign('center')">center</button>
+    <button onclick="setAlign('flex-end')">end</button>
+    <button onclick="setAlign('stretch')">stretch</button>
+    <button onclick="setAlign('baseline')">baseline</button>
+
+    <h3>flex-wrap</h3>
+    <button onclick="setWrap('nowrap')">nowrap</button>
+    <button onclick="setWrap('wrap')">wrap</button>
+    <button onclick="setWrap('wrap-reverse')">wrap-reverse</button>
+
+    <h3>align-content</h3>
+    <button onclick="setAlignContent('flex-start')">start</button>
+    <button onclick="setAlignContent('center')">center</button>
+    <button onclick="setAlignContent('flex-end')">end</button>
+    <button onclick="setAlignContent('space-between')">between</button>
+    <button onclick="setAlignContent('space-around')">around</button>
+
+    <h3>gap</h3>
+    <button onclick="setGap('0px')">0</button>
+    <button onclick="setGap('10px')">10px</button>
+    <button onclick="setGap('30px')">30px</button>
+
+</div>
+
+<!-- CONTENEDOR -->
+<div id="contenedor" class="contenedor">
+    <div class="caja" onclick="modificar(this)">1</div>
+    <div class="caja" onclick="modificar(this)">2</div>
+    <div class="caja" onclick="modificar(this)">3</div>
+    <div class="caja" onclick="modificar(this)">4</div>
+</div>
+
+<p>Clickea un cuadro para cambiar su order / grow / align-self</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
